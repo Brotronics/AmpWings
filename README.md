@@ -21,7 +21,9 @@ pad.  This is useful for a pre-divided ADC such as in naze32.
 
 ### Current
 
-The current sensor emits 36.6mV per Amp over the C pad.
+For the 90A variant, you can measure 36.6mV per Amp over the C pad.
+
+For the 180A variant, measure 18.3mV per Amp.
 
 ## Usage
 
@@ -40,7 +42,9 @@ solder it securely to the large negative pad.
 ## BOM
 
 * U1 [INA169 Current Monitor](http://www.digikey.com/product-detail/en/0/296-26063-1-ND)
-* U2 [Shunt Resistor](http://www.digikey.com/product-detail/en/0/CSS2725FTL250CT-ND)
+* U2 Shunt Resistor – chose one:
+  * [.0005Ω for 90A](http://www.digikey.com/product-detail/en/CSS2725FTL500/CSS2725FTL500CT-ND)
+  * [.00025Ω for 180A](http://www.digikey.com/product-detail/en/0/CSS2725FTL250CT-ND)
 * U3 [Op Amp](http://www.digikey.com/product-detail/en/0/296-36218-1-ND)
 * C1,C2 [0603 0.1μF cap](http://www.digikey.com/product-detail/en/GRM188R71C104KA01D/490-1532-1-ND/587771)
 * R1 [0603 73.2kΩ resistor](http://www.digikey.com/product-detail/en/0/P73.2KHCT-ND)
